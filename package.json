@@ -1,0 +1,17 @@
+{
+    "name": "chat",
+    "version": "1.0.0",
+    "description": "a chat",
+    "main": "server.js",
+    "scripts": {
+        "start": "nodemon server.js"
+    },
+    "author": "404invalid-user",
+    "license": "ISC",
+    "dependencies": {
+        "socket.io": "^2.3.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
+}

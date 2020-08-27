@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <title>invalidgames chat</title>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<style>
+    .container {
+        border: 2px solid #dedede;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    
+    .darker {
+        border-color: #ccc;
+        background-color: #ddd;
+    }
+    
+    .container::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .join {
+        border: 2px solid #dedede;
+        background-color: #09ff00;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    
+    .leave {
+        border: 2px solid #dedede;
+        background-color: #ff3300;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    
+    .form {
+        padding: 3px;
+        position: fixed;
+        bottom: 5px;
+        width: 100%;
+    }
+</style>
+
+<body>
+    <div class="message-container" id="message-container"></div>
+
+    <form id="send-container" class="form">
+        <input type="text" id="message-input" style="resize:horizontal; width:80%">
+        <button type="submit" id="send-button">send</button>
+    </form>
+</body>
+
+</html>
