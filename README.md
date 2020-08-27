@@ -3,7 +3,7 @@ a verry simple web chat  made with node.js
 
 &nbsp;
 #### do npm install
-&nbsp;
+/
 #### then npm run start
 &nbsp;
 &nbsp;
